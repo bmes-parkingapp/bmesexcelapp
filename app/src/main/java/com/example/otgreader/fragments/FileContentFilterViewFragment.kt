@@ -356,7 +356,7 @@ class FileContentFilterViewFragment : Fragment(), FilterResultDisplay.OnRowClick
         fileUri: String?,
         selectedCity: String
     ) {
-        val fragment = DetailDisplayFragment.newInstance(content, fileType, fileUri, selectedCity)
+        val fragment = SummaryDisplayFragment.newInstance(content, fileType, fileUri, selectedCity)
         requireActivity().supportFragmentManager.beginTransaction()
             .replace(R.id.fragment_container, fragment)
             .addToBackStack(null)
